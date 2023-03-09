@@ -11,16 +11,16 @@ from langchain.llms import AzureOpenAI
 from langchain.agents import load_tools
 from langchain.agents import initialize_agent
 
-openai.api_type = "azure"
-openai.api_base = 'https://endpoint.openai.azure.com/'
-openai.api_version = "2022-12-01"
-openai.api_key = '487bb3c64c354640b8c30790bc62d085'
+openai.api_type = <>
+openai.api_base = <>
+openai.api_version = <>
+openai.api_key = <>
 
 
-server = 'foodhealth.database.windows.net'
-database = 'foodhealth'
-username = 'amimukherjee'
-password = 'Amit@520894'   
+server = <>
+database = <>
+username = <>
+password = <>
 driver= 'ODBC Driver 17 for SQL Server'
 
 model = 'text-davinci-003'
