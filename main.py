@@ -28,8 +28,6 @@ model = 'text-davinci-003'
 
 def db_instance():
     #Creating SQLAlchemy connection sting
-    #conn = pyodbc.connect('DRIVER='+driver+';SERVER=tcp:'+server+';PORT=1433;DATABASE='+database+';UID='+username+';PWD='+ password)
-    #params = urllib.parse.quote_plus('Driver={ODBC Driver 17 for SQL Server};Server=tcp:foodhealth.database.windows.net,1433;Database=foodhealth;Uid=amimukherjee;Pwd=Amit@520894;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;')
     params = urllib.parse.quote_plus('DRIVER='+driver+';SERVER=tcp:'+server+';PORT=1433;DATABASE='+database+';UID='+username+';PWD='+ password+';Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;')
 
     conn_str = 'mssql+pyodbc:///?odbc_connect={}'.format(params)
